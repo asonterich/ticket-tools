@@ -12,9 +12,9 @@ This toolkit was built to eliminate that overhead entirely — collapsing each w
 
 ## Impact
 
-Originally built for a single technician's daily workflow, Ticket Tools grew into a shared toolkit used across multiple teams handling IT support, facilities requests, and equipment logistics. The template system made it easy for team members to adopt without writing any code — they run a command, the ticket updates, the email drafts, and they move on.
+Built to solve a real daily inefficiency, Ticket Tools reduced multi-step administrative workflows to single commands. The template system made it easy for team members to adopt without writing any code — run a command, the ticket updates, the email drafts, done.
 
-Across the teams using it, the tool reduced the time spent on ticket documentation and client communication from several minutes per action to seconds. Workflows that previously required switching between three or four systems — Jira, Outlook, asset records, and email history — were reduced to a single CLI command with the relevant details passed as flags. The consistency of templated comments also improved the quality of ticket documentation across the board, since every technician's notes followed the same structure regardless of who worked the ticket.
+Workflows that previously required switching between multiple systems were collapsed into a single CLI command. The consistency of templated comments improved documentation quality across the team, since every note followed the same structure regardless of who worked the ticket.
 
 ---
 
@@ -41,8 +41,8 @@ The Jira scripts (`jira_update.py`, `jira_create.py`, `apple_repair_subtask.py`)
 | `jira_update.py` | Transition any Jira ticket and post a comment using named templates or inline flags |
 | `jira_create.py` | Create a new Jira ticket from a named template or inline flags, auto-resolving required fields |
 | `apple_repair_subtask.py` | Create an Apple repair invoice subtask, assign to the finance team, and print parent + subtask links in one command |
-| `equipment_return.py` | Post a Jira comment AND open a pre-filled Outlook draft for equipment return emails in one command — auto-scrapes the client's personal email from the parent ticket |
-| `new_hire_setup.py` | Send HTML-formatted virtual desktop setup instructions to a new hire, auto-scraping their work email from the JSM client field |
+| `equipment_return.py` | Post a Jira comment AND open a pre-filled Outlook draft for equipment return emails in one command — retrieves the approved contact email from Jira ticket fields automatically |
+| `new_hire_setup.py` | Send HTML-formatted virtual desktop setup instructions to a new hire — retrieves their work email from the JSM client field automatically |
 | `send_email.py` | Send an ad-hoc email through Outlook COM with your default signature preserved |
 
 Template files:
@@ -61,7 +61,7 @@ Template files:
 
 **Live required-field discovery** — `jira_create.py` queries the Jira editmeta API on a recent ticket before creation, so required fields get a valid default value even when not explicitly known. This avoids hard-coded field mappings that break when instances change.
 
-**Dual-channel email scraping** — `equipment_return.py` walks both the current ticket and its parent ticket's full JSON payload looking for a non-org email address. Clients often include personal email in off-boarding tickets; this finds it automatically.
+**Multi-source contact resolution** — `equipment_return.py` walks both the current ticket and its parent ticket's JSON payload to locate the appropriate contact email, falling back gracefully through multiple field sources before prompting for manual input.
 
 **Placeholder substitution with warnings** — All templates support `{placeholder}` syntax. `apply_vars()` fills them from `--var key=value` flags and warns (rather than silently failing) if any unfilled placeholders remain in the output.
 
@@ -181,7 +181,7 @@ python equipment_return.py TICKET-123 "John Smith" john@gmail.com
 python equipment_return.py TICKET-123 "John Smith" --email-only
 ```
 
-The script automatically scrapes the client's personal email from the parent ticket if not provided. The `--remote` flag switches to a template that includes monitor, dock, and FedEx shipping instructions.
+The script automatically resolves the contact email from Jira ticket fields if not provided manually. The `--remote` flag switches to a template that includes monitor, dock, and FedEx shipping instructions.
 
 ### new_hire_setup.py
 
