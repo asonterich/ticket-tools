@@ -1,0 +1,121 @@
+{
+  "mobile_inprogress": {
+    "status": "in progress",
+    "comment": "Device received client contacted regarding pick up. Instructed client on pre set up instructions.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "mobile_scheduled": {
+    "status": null,
+    "comment": "Setup appointment scheduled for {date}.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "mobile_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Met with user to complete mobile device setup. Configured Microsoft Authenticator, Company Portal, Teams, and Outlook. Verified successful sign-in and synchronization. {device_type} Asset Tag: {asset_tag}\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "win11_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Windows 11 update complete.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_phone_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Loaner phone {asset_tag} returned by client. Case resolved.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_laptop_inprogress": {
+    "status": "in progress",
+    "comment": "Loaner device ready for pick up at {office}.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_laptop_pickup": {
+    "status": "pending",
+    "comment": "Issued loaner laptop {asset_tag}. Configured device and verified functionality of Teams, OneDrive, and Outlook. Confirmed network connectivity. Pending device return.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_laptop_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Loaner laptop {asset_tag} returned by client. Case resolved.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_phone_inprogress": {
+    "status": "in progress",
+    "comment": "Loaner device ready for pick up at {office}.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "loaner_phone_pickup": {
+    "status": "pending",
+    "comment": "Issued loaner phone {asset_tag}. Configured device and verified functionality of Teams, OneDrive, and Outlook. Confirmed successful enrollment in the Authenticator app and proper cellular connectivity. Pending device return.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "workstation_setup_inprogress": {
+    "status": "in progress",
+    "comment": "Started workstation setup.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "equipment_return": {
+    "status": null,
+    "comment": "Contacted client via email to coordinate return of company equipment. Requested follow-up to arrange return logistics.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "yubikey_inprogress": {
+    "status": "in progress",
+    "comment": "Configured security key. Item is ready for pickup at {office}.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "yubikey_shipped": {
+    "status": "in progress",
+    "comment": "Configured security key. Item prepared for shipment.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "token_inprogress": {
+    "status": "in progress",
+    "comment": "Configured token. Item is ready for pickup at {office}.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "token_shipped": {
+    "status": "in progress",
+    "comment": "Configured token. Item prepared for shipment.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "yubikey_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Verified successful login. Case resolved.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "token_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Verified successful login. Case resolved.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "refresh_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Completed data transfer, imaging, and setup on the {device_type}. Verified user data was successfully migrated, installed required applications, confirmed updates, and tested OneDrive, Outlook, and overall device functionality. Device {pickup_status} by the client.\n\nHostname: {hostname}\nAsset Tag #: {asset_tag}\nSerial #: {serial}\nModel #: \nOld computer collected: {collected_old}\nPrevious Asset Tag #: {previous_asset_tag}\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "reimage_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Re-enrolled device in Company Portal and completed full reimaging and configuration. Applied standard deployment settings, installed required applications, and confirmed successful MDM enrollment. Verified Outlook, Teams, and OneDrive functionality. Device returned to client and ready for use.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "workstation_setup_resolved": {
+    "status": "resolve",
+    "resolution": "Completed",
+    "resolution_category": "YOUR_RESOLUTION_CATEGORY",
+    "resolution_subcategory": "YOUR_RESOLUTION_SUBCATEGORY",
+    "comment": "Completed workstation setup. Connected and tested monitors, dock, keyboard, mouse, and webcam. Verified all equipment was working properly, organized cables. Workstation is ready for use.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "apple_repair_dropoff": {
+    "status": "in progress",
+    "comment": "Device dropped off at Apple Store for repair. Apple Repair ID: {repair_id}. Invoice subtask created and assigned to finance team to coordinate payment upon completion.\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "apple_repair_ready": {
+    "status": null,
+    "comment": "Apple has completed the repair. Device is ready for pickup. Repair ID: {repair_id}. Please coordinate with the finance team to arrange payment before pickup.\n\n- AI-Assisted Workflow | Ticket Tools"
+  }
+}

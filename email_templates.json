@@ -1,0 +1,14 @@
+{
+  "win11_secure_boot": {
+    "subject": "Windows 11 Upgrade – Action Required | {ticket}",
+    "body": "Hello {first_name},\n\nYour {device_model} is ready to be updated from Windows 10 to Windows 11. Before I can perform the upgrade remotely, there is one setting that needs to be changed in the system BIOS: Secure Boot must be set to Enabled/True instead of Disabled/False.\n\nPlease let me know a convenient day and time when you will be available and connected to the internet, and I can coordinate the Windows 11 upgrade with you remotely.\n\nTo prepare for the upgrade, please follow these steps to enable Secure Boot on your {device_model}:\n\n1. Save your work and shut down the laptop completely.\n2. Turn the laptop back on and immediately begin tapping F2 until the BIOS setup screen appears.\n3. In the BIOS menu, look for Secure Boot. This is usually located under the Boot Configuration, Security, or Boot section depending on the model.\n4. Change Secure Boot from False/Disabled to True/Enabled.\n5. Click Apply.\n6. Click Exit or Save and Exit to restart the laptop normally.\n\nIf you would prefer to have this setting changed in person, it only takes about 5 minutes and can be done when you are in the {office} office.\n\nOnce this is complete, please reply back and let me know, along with a good time for the remote Windows 11 upgrade.\n\nIf you have any trouble locating the setting, feel free to let me know and I can assist further.\n\nKind regards,\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "win11_schedule": {
+    "subject": "Windows 11 Upgrade – Scheduling | {ticket}",
+    "body": "Hello {first_name},\n\nYour {device_model} is ready to be updated to Windows 11. Please let me know a convenient day and time when you will be available and connected to the internet, and I can coordinate the remote upgrade with you.\n\nKind regards,\n\n- AI-Assisted Workflow | Ticket Tools"
+  },
+  "mobile_pickup": {
+    "subject": "Mobile Device Ready for Pickup - {ticket}",
+    "body": "Hello {first_name},\n\nYour company mobile device is now ready for pickup at our {office} office.\n\nIf this is your first time receiving a company-issued mobile device, please complete the steps below before beginning your device setup. Once these steps are complete, we can schedule a time for you to pick up your device.\n\nSetup Preparation Steps:\n\n1. Open a web browser (e.g., Microsoft Edge, Google Chrome, etc.).\n2. Navigate to https://myaccount.microsoft.com/.\n3. You should be logged in automatically.\n4. Select \"Security Info\" from the menu on the left-hand side.\n5. Choose \"Add sign-in method\" and enter your personal cell phone number.\n6. Click \"Add.\"\n\nOnce you've completed these steps, please reply with your availability so we can schedule your device pickup appointment.\n\nKind regards,\n\n- AI-Assisted Workflow | Ticket Tools"
+  }
+}
